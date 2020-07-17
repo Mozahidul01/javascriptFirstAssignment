@@ -24,10 +24,18 @@ console.log(result);
 
 // Tiny Friend 
 
-
-
-
-
+function tinyFriend(friends){
+    var tiny = friends [0];
+    for (var i = 1; i < friends.length; i++) {
+        var currentFriend = friends[i];
+        if (tiny >= currentFriend){
+            tiny = currentFriend;
+        }
+    }
+    return tiny;
+}
+var result = tinyFriend(['Haider', 'Jabbar', 'Kuddus', 'Rajjak', 'Bublu']);
+console.log(result);
 
 
 // Brick Calculator
