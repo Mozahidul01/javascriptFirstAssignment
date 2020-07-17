@@ -6,7 +6,7 @@ function feetToMile (feet) {
         return mile;
     }
     else {
-        return "Please Enter the positive Value."
+        return "Please Enter the positive Value.";
     }
 }
 var result = feetToMile(10560);
@@ -15,25 +15,25 @@ console.log(result);
 
 // Wood Caltulator
 function woodCalculator (chair, table, bed) {
-    if (0 <= chair) {
+    if (0 < chair) {
         var chairWoodCount = chair * 1;
-        if (0 <= table){
+        if (0 < table){
             var tableWoodCount = table * 3;
-            if (0 <= bed){
+            if (0 < bed){
                 var bedWoodCount = bed * 5;
                 var totalWoodCount = chairWoodCount + tableWoodCount + bedWoodCount;
                 return totalWoodCount;
             }
             else {
-                return "Please Enter the positive Value."
+                return "Please Enter the positive Value.";
             }
         }
         else {
-            return "Please Enter the positive Value."
+            return "Please Enter the positive Value.";
         }
     }
     else {
-        return "Please Enter the positive Value."
+        return "Please enter higher value then 0(Zero).";
     }
 }
 
